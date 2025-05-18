@@ -1,9 +1,13 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden; /* 🔒 Prevent horizontal scrolling */
+}
 
 html{
   scroll-behavior: smooth;
@@ -82,15 +86,13 @@ cursor: pointer;
 }
 .home-containers { 
   display: flex;
-  justify-content: flex-end; /* push items to the right */
+  justify-content: flex-end; 
   align-items: right;
-  padding: 20px; /* reasonable general padding */
-  gap: 25px; /* controls spacing between links/items */
-  flex-wrap: wrap; /* helps on smaller screens */
+  padding: 20px; 
+  gap: 25px; 
+  flex-wrap: wrap; 
   margin-top: 20px;
 }
-
-
 .home-containers a {
   text-decoration: none;
   font-family: sans-serif;
@@ -98,23 +100,19 @@ cursor: pointer;
   color: rgb(0, 0, 0);
   transition: 0.5s;
 }
-
 .home-containers a:hover {
   color: rgb(241, 11, 11);
 }
-
 .home-containers .cart-container {
   padding-top: 0;
   margin-left: 0;
 }
-
 .home-containers .cart-container i {
   color: rgb(0, 0, 0);
   font-size: 35px;
   cursor: pointer;
   transition: 0.5s;
 }
-
 .home-containers .cart-container i:hover {
   color: red;
 }
@@ -199,21 +197,16 @@ cursor: pointer;
 }
 .baground .back{
   display: flex;
-  flex-direction: row-reverse; 
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap;
   background-color: #333;
-  height: 517px;
 }
 .baground .back .img{
   margin-right: 350px;
-  margin-bottom: 100px;
 }
 .baground .back .img img{
   padding-top: 70px;
-  width: 80%;
+  width: 90%;
 }
 .fashion{
   top: 390px;
@@ -229,18 +222,24 @@ cursor: pointer;
   font-weight: normal;
   font-size: 50px;
 }
-.fashion .shop{
-  padding-top: 25px;
-}
-.fashion a{
+.shop a {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff3c3c, #d90429);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none;
-  font-family: sans-serif;
-  font-weight: normal;
-  background-color: brown;
-  padding: 12px 45px;
-  color: white;
-  transition: 0.5s;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(255, 60, 60, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.shop a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(255, 60, 60, 0.4);
+}
+
 .fashion a:hover{
   background-color: rgb(190, 35, 35);
 }
@@ -532,7 +531,28 @@ cursor: pointer;
 @media screen and (max-width: 600px) {
   .home-containers { 
     display: none;
-
+  }
+  .baground .back .img img{
+    width: 4000%;
+    margin-left: 9px;
+  }
+  .fashion h1{
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  .fashion{
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+  }
+  .fashion p{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .shop{
+    text-align: center;
+  }
+  .shop a{
+    font-size: 0.8rem;
   }
   .icon-container{
   display: flex;
