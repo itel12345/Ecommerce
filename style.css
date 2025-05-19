@@ -386,6 +386,10 @@ cursor: pointer;
   font-size: 17px;
   color: white;
 }
+  .img19{
+    height: 250px;
+  }
+
 .tops .fit .all20{
   padding-top: 35px;
   display: flex;
@@ -631,6 +635,9 @@ cursor: pointer;
 }
 .offstoff .upto p span{
   display: none;
+}
+.img19{
+  height: 40vh;
 }
 .tops .fit .all20{
   padding-top: 35px;
