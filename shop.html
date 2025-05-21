@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Premium Brand</title>
+    <!-- Same styles as home page -->
+</head>
+<body>
+    <header>
+        <!-- Same navigation as home page -->
+    </header>
+    <style>
+        /* shop.css - Styles for the Shop Page */
+
+/* Inherit all base styles from home.css */
+@import url('home.css');
+
+/* Shop Hero */
+.shop-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('shop-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 0 2rem;
+}
+
+.shop-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Shop Options */
+.shop-options {
+  padding: 3rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.categories h2,
+.featured h2,
+.best-sellers h2,
+.new-arrivals h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.category-grid,
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.category {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.category:hover {
+  transform: translateY(-10px);
+}
+
+.category img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.category h3 {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  color: var(--white);
+  font-size: 1.8rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
+}
+
+.category-link {
+  display: block;
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.category-link:hover {
+  background-color: #c0392b;
+}
+
+/* Product Styles */
+.product {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product h3 {
+  padding: 1rem 1rem 0;
+  color: var(--primary-color);
+}
+
+.price {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.description {
+  padding: 0 1rem 1rem;
+  color: var(--text-light);
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.add-to-cart:hover {
+  background-color: #2980b9;
+}
+
+/* Shop Benefits */
+.shop-benefits {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.shop-benefits h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 2rem;
+}
+
+.benefit img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.benefit h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .categories h2,
+  .featured h2,
+  .best-sellers h2,
+  .new-arrivals h2,
+  .shop-benefits h2 {
+    font-size: 2rem;
+  }
+
+  .category {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-hero h1 {
+    font-size: 2rem;
+  }
+
+  .product {
+    min-width: 100%;
+  }
+}
+    </style>
+    <section class="shop-hero">
+        <h1>Our Products</h1>
+        <p>Discover our premium collection</p>
+    </section>
+
+    <section class="shop-options">
+        <div class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category">
+                    <img src="category1.jpg" alt="Category 1">
+                    <h3>Home Essentials</h3>
+                    <a href="/shop/home-essentials" class="category-link">Browse Collection</a>
+                </div>
+                <div class="category">
+                    <img src="category2.jpg" alt="Category 2">
+                    <h3>Office Solutions</h3>
+                    <a href="/shop/office-solutions" class="category-link">Browse Collection</a>
+                </div>
+                <!-- Additional categories -->
+            </div>
+        </div>
+
+        <div class="featured">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Premium Desk">
+                    <h3>Premium Executive Desk</h3>
+                    <p class="price">$599.99</p>
+                    <p class="description">Handcrafted from sustainable oak with premium hardware</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Leather Chair">
+                    <h3>Genuine Leather Chair</h3>
+                    <p class="price">$399.99</p>
+                    <p class="description">Ergonomic design with full-grain Italian leather</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Additional featured products -->
+            </div>
+        </div>
+
+        <div class="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product3.jpg" alt="Desk Organizer">
+                    <h3>Minimalist Desk Organizer</h3>
+                    <p class="price">$89.99</p>
+                    <p class="description">Keep your workspace tidy with this elegant organizer</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Additional best sellers -->
+            </div>
+        </div>
+
+        <div class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product4.jpg" alt="Smart Lamp">
+                    <h3>Smart Ambient Lamp</h3>
+                    <p class="price">$129.99</p>
+                    <p class="description">App-controlled lighting with customizable presets</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Additional new arrivals -->
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-benefits">
+        <h2>Why Shop With Us?</h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <img src="free-shipping.png" alt="Free Shipping">
+                <h3>Free Shipping</h3>
+                <p>On all orders over $50</p>
+            </div>
+            <div class="benefit">
+                <img src="easy-returns.png" alt="Easy Returns">
+                <h3>Easy Returns</h3>
+                <p>30-day hassle-free returns</p>
+            </div>
+            <div class="benefit">
+                <img src="secure-checkout.png" alt="Secure Checkout">
+                <h3>Secure Checkout</h3>
+                <p>100% secure payment processing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as home page -->
+</body>
+</html>

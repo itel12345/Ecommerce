@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Premium Brand</title>
+    <!-- Same styles as home page -->
+</head>
+<body>
+
+    <style>
+        /* about.css - Styles for the About Page */
+
+/* Inherit all base styles from home.css */
+@import url('home.css');
+
+/* About Hero */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 0 2rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* History Section */
+.history {
+  padding: 5rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.history h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.history p {
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.milestones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.milestone {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.milestone:hover {
+  transform: translateY(-5px);
+}
+
+.milestone h3 {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Mission Section */
+.mission {
+  background-color: var(--light-color);
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.mission p {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.values {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.value h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* Team Section */
+.team {
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.team > p {
+  margin-bottom: 3rem;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.member h3 {
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Awards Section */
+.awards {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.awards h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.awards > p {
+  margin-bottom: 3rem;
+}
+
+.award-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.award {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.award img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.award h3 {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .milestone {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .history h2, .mission h2, .team h2, .awards h2 {
+    font-size: 2rem;
+  }
+}
+    </style>
+    <header>
+        <!-- Same navigation as home page -->
+    </header>
+
+    <section class="about-hero">
+        <h1>Our Story</h1>
+        <p>How a simple idea grew into a thriving business</p>
+    </section>
+
+    <section class="history">
+        <h2>Our Humble Beginnings</h2>
+        <p>Founded in 2010 by two college friends, Premium Brand started as a small garage operation with a simple mission: to create high-quality products that make people's lives better. What began as a side project quickly grew into a full-fledged business as word spread about our exceptional craftsmanship and attention to detail.</p>
+        
+        <div class="milestones">
+            <div class="milestone">
+                <h3>2010</h3>
+                <p>Founded in a small garage with just $5,000 in savings</p>
+            </div>
+            <div class="milestone">
+                <h3>2013</h3>
+                <p>Opened our first retail location in downtown Seattle</p>
+            </div>
+            <div class="milestone">
+                <h3>2016</h3>
+                <p>Launched our e-commerce platform, expanding nationwide</p>
+            </div>
+            <div class="milestone">
+                <h3>2020</h3>
+                <p>Reached 1 million satisfied customers worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission & Values</h2>
+        <p>At Premium Brand, we believe that quality should never be compromised. Our mission is to create products that stand the test of time while providing exceptional customer service at every touchpoint.</p>
+        
+        <div class="values">
+            <div class="value">
+                <h3>Quality First</h3>
+                <p>We source only the finest materials and subject every product to rigorous testing before it reaches you.</p>
+            </div>
+            <div class="value">
+                <h3>Sustainability</h3>
+                <p>We're committed to eco-friendly practices, from sustainable sourcing to minimal packaging.</p>
+            </div>
+            <div class="value">
+                <h3>Customer Focus</h3>
+                <p>Your satisfaction is our top priority. We stand behind every product with a 100% satisfaction guarantee.</p>
+            </div>
+            <div class="value">
+                <h3>Innovation</h3>
+                <p>We continuously improve our products based on customer feedback and the latest technological advancements.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <p>The passionate people behind Premium Brand</p>
+        
+        <div class="team-members">
+            <div class="member">
+                <img src="ceo.jpg" alt="CEO">
+                <h3>Alex Johnson</h3>
+                <p class="position">Co-Founder & CEO</p>
+                <p class="bio">With a background in engineering and a passion for quality craftsmanship, Alex oversees product development and company strategy.</p>
+            </div>
+            <div class="member">
+                <img src="cmo.jpg" alt="CMO">
+                <h3>Sarah Williams</h3>
+                <p class="position">Co-Founder & CMO</p>
+                <p class="bio">Sarah's marketing expertise and customer-first philosophy have been instrumental in building our brand reputation.</p>
+            </div>
+            <!-- Additional team members -->
+        </div>
+    </section>
+
+    <section class="awards">
+        <h2>Recognized Excellence</h2>
+        <p>We're proud to have received these industry accolades</p>
+        
+        <div class="award-list">
+            <div class="award">
+                <img src="award1.png" alt="Best in Class Award">
+                <h3>Best in Class 2022</h3>
+                <p>Recognized for product quality and innovation by the Industry Standards Association</p>
+            </div>
+            <div class="award">
+                <img src="award2.png" alt="Green Business Certification">
+                <h3>Green Business Certified</h3>
+                <p>Awarded for our sustainable manufacturing practices</p>
+            </div>
+            <!-- Additional awards -->
+        </div>
+    </section>
+
+    <!-- Same footer as home page -->
+</body>
+</html>
