@@ -169,8 +169,8 @@ cursor: pointer;
 .shop-side{
   position: fixed;
   top: 0;
-  right: -450px;
-  width: 450px;
+  right: -150px;
+  width: 250px;
   background-color: rgb(255, 255, 255);
   height: 100%;
   border: 1px solid black;
@@ -596,6 +596,11 @@ cursor: pointer;
   .shop-side{
     width: 80%;
   }
+  .shop-side{
+      right: -950px;
+      width: 350px;
+      width: 80%;
+  }
   .cartt{
 
     text-align: center;
@@ -723,7 +728,7 @@ h1{
   .shop-side{
     position: fixed;
     top: 0;
-    right: -900px;
+    right: -1800px;
     width: 450px;
     width: 80%;
   }
